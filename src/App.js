@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import IlustracionFinalists from "./components/IlustracionFinalists";
+import Navbar from "./components/Navbar";
+import { useAuthContext } from "./components/hooks/useAuthContext";
+import DrawingFinalists from "./components/DrawingFinalists";
+import PhotoFinalists from "./components/PhotoFinalists";
+import VoteEntryVideo from "./components/VoteEntryVideo";
+import VideoFinalists from "./components/VideoFinalists";
 
 function App() {
+  const { user, authIsReady } = useAuthContext();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {authIsReady && (
+        <>
+          <Navbar />
+          <IlustracionFinalists />
+          <DrawingFinalists />
+          <PhotoFinalists />
+          <VideoFinalists />
+        </>
+      )}
     </div>
   );
 }

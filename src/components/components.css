@@ -1,0 +1,367 @@
+html,
+nav {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  color: var(--blue);
+}
+
+a,
+u {
+  text-decoration: underline solid 2px;
+  color: #0958a3;
+}
+
+.sign-in {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  padding: 2rem 0 0 0;
+}
+
+.logged-userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.logout {
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: #0958a3 dotted 3px;
+}
+
+.entries {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.categoria-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 50px 0 30px;
+}
+
+.categoria-logo {
+  height: 80px;
+}
+
+.categoria-nombre {
+  max-width: 350px;
+  max-height: 50px;
+}
+
+.entry-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-entries {
+  width: 320px;
+  height: 340px;
+  cursor: pointer;
+  border: white solid 5px;
+}
+
+.image-modal {
+  width: 100%;
+}
+
+.art-data {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.art-details {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.finalist-author {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.finalist-title {
+  max-width: 280px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.counter {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.votes-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.deco {
+  display: none;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  cursor: default;
+  display: inline-block;
+  /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #32c3a9;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  right: 0;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.wobble-ver-left {
+  -webkit-animation: wobble-ver-left 1s both;
+  animation: wobble-ver-left 1s both;
+}
+
+/**
+ * ----------------------------------------
+ * animation wobble-ver-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes wobble-ver-left {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+    transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+    transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+    transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-ver-left {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+    transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+    transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+    transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+
+/* Tablet Styles (min-width: 768px) and*/
+
+@media screen and (min-width: 768px) {
+  .deco {
+    display: inline;
+  }
+
+  .entries {
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .sign-in {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 3rem 0 1rem 0;
+  }
+
+  .logged-userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .logout {
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: #0958a3 dotted 3px;
+  }
+
+  .categoria-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0 25px;
+  }
+
+  .categoria-logo {
+    height: 80px;
+  }
+
+  .categoria-nombre {
+    height: 50px;
+  }
+
+  .image-entries {
+    width: 180px;
+    height: 200px;
+  }
+
+  .art-details {
+    text-align: center;
+  }
+
+  .art-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .finalist-title {
+    max-width: 200px;
+  }
+
+  .counter {
+    flex-direction: column;
+  }
+
+  .tooltip .tooltiptext {
+    /* Position the tooltip */
+
+    top: 15%;
+    left: 50%;
+    margin-left: -60px;
+  }
+}
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 1150px) {
+  .entries {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* GOOGLE BUTTON */
+
+.google-btn {
+  width: 200px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.google-icon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+.btn-text {
+  float: right;
+  margin: 11px 11px 0 0;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+  text-align: center;
+}
+&:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+&:active {
+  background: #1669f2;
+}
