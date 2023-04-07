@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import { useAuthContext } from "./components/hooks/useAuthContext";
 import DrawingFinalists from "./components/DrawingFinalists";
 import PhotoFinalists from "./components/PhotoFinalists";
-import VoteEntryVideo from "./components/VoteEntryVideo";
 import VideoFinalists from "./components/VideoFinalists";
 
 function App() {

@@ -12,6 +12,36 @@ u {
   color: #0958a3;
 }
 
+.formContainer {
+  width: 95%;
+  background-color: rgba(255, 255, 255, 0.551);
+  border-radius: 5px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  margin: 2rem auto 0;
+}
+.formPhone {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btnOTP {
+  background-color: #32c3a9;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .sign-in {
   width: 100%;
   display: flex;
@@ -313,6 +343,10 @@ u {
     left: 50%;
     margin-left: -60px;
   }
+
+  .formContainer {
+    width: 40%;
+  }
 }
 
 /* DESKTOP STYLES */
@@ -334,6 +368,15 @@ u {
   cursor: pointer;
 }
 
+.phone-btn {
+  width: 200px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
 .google-icon-wrapper {
   position: absolute;
   margin-top: 1px;
@@ -343,6 +386,7 @@ u {
   border-radius: 2px;
   background-color: #fff;
 }
+
 .google-icon {
   position: absolute;
   margin-top: 11px;
@@ -350,6 +394,20 @@ u {
   width: 18px;
   height: 18px;
 }
+
+.phone-icon {
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 7px;
+  width: 25px;
+  height: 25px;
+}
+
+.PhoneInputInput {
+  font-size: 18px;
+  padding: 5px;
+}
+
 .btn-text {
   float: right;
   margin: 11px 11px 0 0;

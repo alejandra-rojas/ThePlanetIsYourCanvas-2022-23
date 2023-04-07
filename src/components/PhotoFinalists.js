@@ -73,7 +73,7 @@ export default function PhotoFinalists() {
 
               <div className="art-data">
                 <div className="art-details">
-                  <div className="finalist-author">{author}</div>
+                  {/* <div className="finalist-author">{author}</div> */}
                   <div className="finalist-title">{title}</div>
                 </div>
                 <div className="tooltip">

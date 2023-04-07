@@ -58,7 +58,7 @@ export default function IlustracionFinalists() {
 
       <div className="entries">
         {ilustraciones.length === 0 ? (
-          <p>Finalits are loading.</p>
+          <p>Finalists are loading.</p>
         ) : (
           ilustraciones.map(({ id, title, author, imageURL, votes }) => (
             <div key={id} className="entry-details">
@@ -66,14 +66,14 @@ export default function IlustracionFinalists() {
                 className="image-entries"
                 small={imageURL}
                 large={imageURL}
-                alt={`${author}: ${title}.`}
+                alt={title}
                 hideDownload="true"
                 hideZoom="true"
               />
 
               <div className="art-data">
                 <div className="art-details">
-                  <div className="finalist-author">{author}</div>
+                  {/* <div className="finalist-author">{author}</div> */}
                   <div className="finalist-title">{title}</div>
                 </div>
                 <div className="tooltip">

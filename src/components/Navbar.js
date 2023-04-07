@@ -1,16 +1,25 @@
-import React from "react";
+import { useState } from "react";
 import { useLoginGoogle } from "./hooks/useLoginGoogle";
 import { useLogout } from "./hooks/useLogout";
 import { useAuthContext } from "./hooks/useAuthContext";
-import Login from "./Login";
 import Signup from "./Signup";
-import { useLoginFacebook } from "./hooks/useLoginFacebook";
+
+import PhoneSign from "./PhoneSign";
 
 export default function NavBar() {
   const { logout } = useLogout();
   const { user } = useAuthContext();
   const { signInWithGoogle } = useLoginGoogle();
-  const { signInWithFacebook } = useLoginFacebook();
+
+  const [loginIsShown, setLoginIsShown] = useState(false);
+
+  const handleClick = (e) => {
+    if (!loginIsShown) {
+      setLoginIsShown(true);
+    } else if (loginIsShown || user) {
+      setLoginIsShown(false);
+    }
+  };
 
   return (
     <>
@@ -40,16 +49,16 @@ export default function NavBar() {
 
         {!user && (
           <>
-            <div className="google-btn" onClick={signInWithFacebook}>
+            <div className="phone-btn" onClick={handleClick}>
               <div className="google-icon-wrapper">
                 <img
-                  className="google-icon"
-                  alt="facebook-icon"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/64px-Facebook_f_logo_%282019%29.svg.png"
+                  className="phone-icon"
+                  alt="phone-icon"
+                  src="media/pngs/phoneblue.svg"
                 />
               </div>
               <div className="btn-text">
-                <b>Sign in with facebook</b>
+                <b>Sign in with phone</b>
               </div>
             </div>
 
@@ -73,7 +82,7 @@ export default function NavBar() {
             <div className="logged-userInfo">
               <div>
                 You are signed in as <br></br>
-                {user.displayName || user.email}
+                {user.displayName || user.email || user.phoneNumber}
               </div>
 
               <div onClick={logout} className="logout">
@@ -89,6 +98,14 @@ export default function NavBar() {
           </>
         )}
       </div>
+
+      {!user && loginIsShown ? (
+        <div>
+          <PhoneSign />
+        </div>
+      ) : (
+        <div></div>
+      )}
     </>
   );
 }

@@ -37,7 +37,7 @@ export default function VoteEntryDraw({ id, votes }) {
       <i
         className={`fa ${
           !votes?.includes(user.uid) ? "-regular" : "-solid"
-        } fa-thumbs-up`}
+        } fa-thumbs-up ${!votes?.includes(user.uid) ? "" : "wobble-ver-left"}`}
         style={{
           display: "inline",
           cursor: "pointer",
