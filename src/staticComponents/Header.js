@@ -140,7 +140,7 @@ function Header() {
 
           <nav>
             <div
-              className={`container ${menuIsShown ? "ham-active1" : ""}`}
+              className={`container ${menuIsShown ? "" : "ham-active1"}`}
               id="ham-active"
             >
               <ul className="nav-main">
