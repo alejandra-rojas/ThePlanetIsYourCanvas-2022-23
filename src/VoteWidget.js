@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import IlustracionFinalists from "./components/IlustracionFinalists";
 import DrawingFinalists from "./components/DrawingFinalists";
 import PhotoFinalists from "./components/PhotoFinalists";
-import VideoFinalists from "./components/VideoFinalists";
 
 function VoteWidget() {
   const { user, authIsReady } = useAuthContext();

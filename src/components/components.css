@@ -322,8 +322,8 @@ u {
   }
 
   .image-entries {
-    width: 180px;
-    height: 200px;
+    width: auto;
+    height: 220px;
   }
 
   .video-entries {
