@@ -8,10 +8,9 @@ import "react-responsive-modal/styles.css";
 import ModalImage from "react-modal-image";
 
 export default function IlustracionFinalists() {
+  const href = window.location.pathname;
   const [ilustraciones, setIlustraciones] = useState([]);
   const { user } = useAuthContext(auth);
-  const href = window.location.pathname;
-  console.log(href);
 
   const handleClickScroll = () => {
     const voteRegisterSection = document.getElementById("vote");
@@ -41,7 +40,7 @@ export default function IlustracionFinalists() {
           src="media/votacion/ilustracionLogo.svg"
           alt="logo-ilustracion"
         ></img>
-        {href === "/index.html" ? (
+        {href === "/" ? (
           <img
             className="categoria-nombre"
             src="media/votacion/finalistsDI.svg"
@@ -50,7 +49,7 @@ export default function IlustracionFinalists() {
         ) : (
           <img
             className="categoria-nombre"
-            src="media/votacion/finalistsDI.svg"
+            src="media/votacion/finalistasDI.svg"
             alt="categorie-ilustracion"
           ></img>
         )}
@@ -93,9 +92,9 @@ export default function IlustracionFinalists() {
                         <div className="votes-number">{votes?.length}</div>
 
                         <span className="tooltiptext">
-                          {href === "/index.html"
+                          {href === "/"
                             ? "Register to vote"
-                            : "registrate para votar"}
+                            : "Registrate para votar"}
                         </span>
                       </div>
                     </div>

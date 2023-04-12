@@ -9,6 +9,7 @@ import VoteEntryDraw from "./VoteEntryDraw";
 import ModalImage from "react-modal-image";
 
 export default function DrawingFinalists() {
+  const href = window.location.pathname;
   const [drawings, setDrawings] = useState([]);
   const { user } = useAuthContext(auth);
 
@@ -49,11 +50,19 @@ export default function DrawingFinalists() {
           src="media/votacion/dibujoLogo.svg"
           alt="logo-dibujo"
         ></img>
-        <img
-          className="categoria-nombre"
-          src="media/votacion/finalistsDP.svg"
-          alt="categorie-drawing"
-        ></img>
+        {href === "/" ? (
+          <img
+            className="categoria-nombre"
+            src="media/votacion/finalistsDP.svg"
+            alt="categorie-ilustracion"
+          ></img>
+        ) : (
+          <img
+            className="categoria-nombre"
+            src="media/votacion/finalistasDP.svg"
+            alt="categorie-ilustracion"
+          ></img>
+        )}
       </div>
 
       <div className="entries">
@@ -92,7 +101,11 @@ export default function DrawingFinalists() {
                       />
                       <div onClick={handleClickScroll}>
                         <div className="votes-number">{votes?.length}</div>
-                        <span className="tooltiptext">Register to vote</span>
+                        <span className="tooltiptext">
+                          {href === "/"
+                            ? "Register to vote"
+                            : "Registrate para votar"}
+                        </span>
                       </div>
                     </div>
                   )}

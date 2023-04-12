@@ -41,7 +41,7 @@ export default function VideoFinalists() {
           src="media/votacion/videoLogo.svg"
           alt="logo-videocamera"
         ></img>
-        {href === "/index.html" ? (
+        {href === "/" ? (
           <img
             className="categoria-nombre"
             src="media/votacion/finalistsVI.svg"
@@ -50,7 +50,7 @@ export default function VideoFinalists() {
         ) : (
           <img
             className="categoria-nombre"
-            src="media/votacion/finalistsVI.svg"
+            src="media/votacion/finalistasVI.svg"
             alt="categorie-video"
           ></img>
         )}
@@ -62,14 +62,18 @@ export default function VideoFinalists() {
         ) : (
           videos.map(({ id, title, author, imageURL, votes }) => (
             <div key={id} className="entry-details">
-              <ModalImage
-                className="image-entries"
-                small={imageURL}
-                large={imageURL}
-                alt={`${author}: ${title}.`}
-                hideDownload="true"
-                hideZoom="true"
-              />
+              <video
+                className="video-entries"
+                width="100%"
+                height="100%"
+                src={imageURL}
+                controls
+                controlsList="nodownload noplaybackrate"
+                disablePictureInPicture
+                muted
+                autoPlay
+                loading="lazy"
+              ></video>
 
               <div className="art-data">
                 <div className="art-details">
@@ -93,9 +97,9 @@ export default function VideoFinalists() {
                         <div className="votes-number">{votes?.length}</div>
 
                         <span className="tooltiptext">
-                          {href === "/index.html"
+                          {href === "/"
                             ? "Register to vote"
-                            : "Register to vote"}
+                            : "Registrate para votar"}
                         </span>
                       </div>
                     </div>

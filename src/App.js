@@ -1,24 +1,16 @@
-import IlustracionFinalists from "./components/IlustracionFinalists";
-import Navbar from "./components/Navbar";
-import { useAuthContext } from "./components/hooks/useAuthContext";
-import DrawingFinalists from "./components/DrawingFinalists";
-import PhotoFinalists from "./components/PhotoFinalists";
-import VideoFinalists from "./components/VideoFinalists";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import En from "./En";
+import Es from "./Es";
 
 function App() {
-  const { user, authIsReady } = useAuthContext();
-
   return (
     <div className="App">
-      {authIsReady && (
-        <>
-          <Navbar />
-          <IlustracionFinalists />
-          <DrawingFinalists />
-          <PhotoFinalists />
-          <VideoFinalists />
-        </>
-      )}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<En />} />
+          <Route path="/es" element={<Es />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

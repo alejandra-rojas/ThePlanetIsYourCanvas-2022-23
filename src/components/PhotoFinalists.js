@@ -41,7 +41,7 @@ export default function PhotoFinalists() {
           src="media/votacion/fotoLogo.svg"
           alt="logo-camera"
         ></img>
-        {href === "/index.html" ? (
+        {href === "/" ? (
           <img
             className="categoria-nombre"
             src="media/votacion/finalistsPH.svg"
@@ -50,7 +50,7 @@ export default function PhotoFinalists() {
         ) : (
           <img
             className="categoria-nombre"
-            src="media/votacion/finalistsPH.svg"
+            src="media/votacion/finalistasFo.svg"
             alt="categorie-photography"
           ></img>
         )}
@@ -93,9 +93,9 @@ export default function PhotoFinalists() {
                         <div className="votes-number">{votes?.length}</div>
 
                         <span className="tooltiptext">
-                          {href === "/index.html"
+                          {href === "/"
                             ? "Register to vote"
-                            : "Register to vote"}
+                            : "Registrate para votar"}
                         </span>
                       </div>
                     </div>

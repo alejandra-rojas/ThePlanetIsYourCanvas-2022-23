@@ -7,6 +7,7 @@ import GoogleButton from "react-google-button";
 import { useUserAuth } from "../context/UserAuthContext";
 
 const Login = () => {
+  const href = window.location.pathname;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");

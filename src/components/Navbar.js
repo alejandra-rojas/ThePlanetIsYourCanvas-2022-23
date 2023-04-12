@@ -7,6 +7,7 @@ import Signup from "./Signup";
 import PhoneSign from "./PhoneSign";
 
 export default function NavBar() {
+  const href = window.location.pathname;
   const { logout } = useLogout();
   const { user } = useAuthContext();
   const { signInWithGoogle } = useLoginGoogle();
@@ -41,7 +42,11 @@ export default function NavBar() {
                 />
               </div>
               <div className="btn-text">
-                <b>Sign in with google</b>
+                {href === "/" ? (
+                  <b>Sign in with Google</b>
+                ) : (
+                  <b>Registro con Google</b>
+                )}
               </div>
             </div>
           </>
@@ -58,7 +63,11 @@ export default function NavBar() {
                 />
               </div>
               <div className="btn-text">
-                <b>Sign in with phone</b>
+                {href === "/" ? (
+                  <b>Sign in with phone</b>
+                ) : (
+                  <b>Registro con teléfono</b>
+                )}
               </div>
             </div>
 
@@ -81,12 +90,18 @@ export default function NavBar() {
             />
             <div className="logged-userInfo">
               <div>
-                You are signed in as <br></br>
+                {href === "/" ? (
+                  <b>You are signed in as</b>
+                ) : (
+                  <b>Estás registrado como</b>
+                )}
+
+                <br></br>
                 {user.displayName || user.email || user.phoneNumber}
               </div>
 
               <div onClick={logout} className="logout">
-                LOGOUT
+                {href === "/" ? "LOGOUT" : "cerrar sesión"}
               </div>
             </div>
             <img
