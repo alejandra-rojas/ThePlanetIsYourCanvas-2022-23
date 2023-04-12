@@ -14,7 +14,7 @@ function Resources() {
               className="svg-inline"
               src="media/iconswhite/resources.svg"
               alt="icon of a sun"
-              srcset="media/iconswhite/resources.svg"
+              srcSet="media/iconswhite/resources.svg"
               height="35px"
               width="auto"
             />
@@ -222,7 +222,7 @@ function Resources() {
                 loading="lazy"
                 src="https://www.youtube.com/embed/sPC8o1rxQ_I"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -233,7 +233,7 @@ function Resources() {
                 loading="lazy"
                 src="https://www.youtube.com/embed/sTCnJa_P8xY"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -243,7 +243,7 @@ function Resources() {
                 loading="lazy"
                 src="https://www.youtube.com/embed/VXRcGGm1DtI"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -253,7 +253,7 @@ function Resources() {
                 loading="lazy"
                 src="https://www.youtube.com/embed/Ttv-OcvnsaY"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -263,7 +263,7 @@ function Resources() {
                 loading="lazy"
                 src="https://www.youtube.com/embed/MgUobxtdm4A"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -273,7 +273,7 @@ function Resources() {
                 loading="lazy"
                 src="https://www.youtube.com/embed/GeBvmBvWVgM"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -283,7 +283,7 @@ function Resources() {
                 loading="lazy"
                 src="https://www.youtube.com/embed/RYpyVPx5HKE"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>

@@ -66,7 +66,7 @@ export default function PhotoFinalists() {
                 className="image-entries"
                 small={imageURL}
                 large={imageURL}
-                alt={`${author}: ${title}.`}
+                alt={title}
                 hideDownload="true"
                 hideZoom="true"
               />
