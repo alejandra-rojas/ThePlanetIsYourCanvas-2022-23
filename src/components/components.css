@@ -324,7 +324,12 @@ u {
 
   .image-entries {
     width: auto;
-    height: 220px;
+    height: 290px;
+  }
+
+  .dibujo-entries {
+    width: auto;
+    height: 260px;
   }
 
   .video-entries {
@@ -344,7 +349,7 @@ u {
   }
 
   .finalist-title {
-    max-width: 200px;
+    max-width: 230px;
   }
 
   .counter {
