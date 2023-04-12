@@ -3,6 +3,13 @@ import React from "react";
 function About() {
   const href = window.location.pathname;
 
+  const handleClickScroll = () => {
+    const element = document.getElementById("vote");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="intro" id="intro">
       <aside className="decorative-left">
@@ -54,7 +61,7 @@ function About() {
           </div>
         )}
 
-        <div className="intro-images">
+        <div className="intro-images" onClick={handleClickScroll}>
           {href === "/" ? (
             <>
               <img
@@ -67,6 +74,11 @@ function About() {
                 className="iconos-participate"
                 src="media/SVG/categoriesName.svg"
                 alt="categories of the contest: illustration, painting, photo, video"
+              />
+              <img
+                className="iconos-participate"
+                src="media/voteBanner/enGreen.svg"
+                alt="Public vote is now open."
               />
             </>
           ) : (
@@ -82,6 +94,12 @@ function About() {
                 class="iconos-participate"
                 src="media/SVG/categoriesNameES.svg"
                 alt="icons of categories: illustration, painting, photo, video"
+              />
+
+              <img
+                class="iconos-participate"
+                src="media/voteBanner/esGreen.svg"
+                alt="El voto del publico esta abierto."
               />
             </>
           )}
