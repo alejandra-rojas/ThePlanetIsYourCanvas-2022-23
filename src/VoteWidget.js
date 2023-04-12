@@ -16,7 +16,6 @@ function VoteWidget() {
           <IlustracionFinalists />
           <DrawingFinalists />
           <PhotoFinalists />
-          <VideoFinalists />
         </>
       )}
     </div>
