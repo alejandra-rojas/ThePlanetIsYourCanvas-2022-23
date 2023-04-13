@@ -1,7 +1,8 @@
 import React from "react";
-const href = window.location.pathname;
 
 function VoteOut() {
+  const href = window.location.pathname;
+
   return (
     <div className="padding-main-container">
       <div className="stages-text-container">
