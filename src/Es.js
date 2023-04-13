@@ -7,6 +7,7 @@ import Participate from "./staticComponents/Participate";
 import VoteIntro from "./staticComponents/VoteIntro";
 import VoteWidget from "./VoteWidget";
 import Footer from "./staticComponents/Footer";
+import VoteOut from "./staticComponents/VoteOut";
 
 function Es() {
   return (
@@ -19,6 +20,7 @@ function Es() {
       <Participate />
       <VoteIntro />
       <VoteWidget />
+      <VoteOut />
       <Footer />
     </>
   );
