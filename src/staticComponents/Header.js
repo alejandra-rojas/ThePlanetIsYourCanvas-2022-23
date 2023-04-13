@@ -77,12 +77,25 @@ function Header() {
             </div>
           </div>
 
-          <img
-            id="logo"
-            className="logo animate__animated animate__flip"
-            src="media/LOGO-CONCURSO-WEB.png"
-            alt="Logo of contest. The background has the planet earth."
-          />
+          {href === "/" ? (
+            <>
+              <img
+                id="logo"
+                className="logo animate__animated animate__flip"
+                src="media/LOGO-CONCURSO-WEB.png"
+                alt="Logo of contest. The background has the planet earth."
+              />
+            </>
+          ) : (
+            <>
+              <img
+                id="logo"
+                className="logo animate__animated animate__flip"
+                src="media/LOGO-CONCURSO-WEBES.png"
+                alt="Logo of contest. The background has the planet earth."
+              />
+            </>
+          )}
 
           <div className="ham-container" id="ham-button" onClick={handleClick}>
             <img
