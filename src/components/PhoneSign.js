@@ -10,6 +10,7 @@ import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 
 function PhoneSign() {
+  const href = window.location.pathname;
   const countryCode = "";
   const [phoneNumber, setPhoneNumber] = useState(countryCode);
   const [expandForm, setExpandForm] = useState(false);
@@ -76,13 +77,19 @@ function PhoneSign() {
   return (
     <div className="formContainer">
       <form onSubmit={requestOTP} className="formPhone">
-        <div className="formTitle">Sign in with mobile number</div>
+        <div className="formTitle">
+          {href === "/"
+            ? "Sign in with mobile number"
+            : "Registrate con un teléfono móvil"}
+        </div>
         <div>
           <PhoneInput
             defaultCountry="PA"
             value={phoneNumber}
             onChange={setPhoneNumber}
-            placeholder="Enter Mobile Number"
+            placeholder={
+              href === "/" ? "Enter Mobile Number" : "Ingrese su teléfono móvil"
+            }
           />
           {/* <label htmlFor="phoneNumberInput" className="form-label">
             Phone Number
@@ -96,7 +103,9 @@ function PhoneSign() {
             onChange={(e) => setPhoneNumber(e.target.value)}
           /> */}
           <div id="phoneNumberHelp" className="form-text">
-            Select your country and enter your mobile phone number.
+            {href === "/"
+              ? "Select your country and enter your mobile phone number."
+              : "Seleccione su país e ingrese su número de teléfono móvil."}
           </div>
         </div>
         {expandForm === true ? (
@@ -113,15 +122,18 @@ function PhoneSign() {
                 onChange={verifyOtp}
               />
               <div id="otpHelp" className="form-text">
-                Please enter the one time pin sent to your mobile. Message with
-                the pin can take a couple of minutes to arrive.
+                {href === "/"
+                  ? "Please enter the one time pin sent to your mobile. Message with the pin can take a couple of minutes to arrive."
+                  : "Ingrese el código único enviado a su teléfono móvil. El mensaje con el código puede tardar un par de minutos en llegar."}
               </div>
             </div>
           </>
         ) : null}
         {expandForm === false ? (
           <button type="submit" className="btnOTP">
-            Request OTP
+            {href === "/"
+              ? "Request OTP"
+              : "Solicita el código de verificación"}
           </button>
         ) : null}
         <div id="recaptcha-container"></div>
