@@ -25,8 +25,8 @@ function VoteIntro() {
 
           <p>
             {href === "/"
-              ? "The finalists have been selected and you can help decide who the winner is. To vote, register with a phone number, only one registration is allowed per person. The public vote will have a weight of 20% and the vote closes on April 25. Please note that email registration is under maintenance, come back in a few hours. "
-              : "Los finalistas han sido seleccionados y tú puedes ayudar a decidir quien es el ganador. Para votar, registrate con número de teléfono, solo se permite un registro por persona. La votación del público tendrá una incidencia del 20% sobre el total y la votación cierra el 25 de abril. El registro con correo se encuentra en mantenimiento, regresa en unas horas."}
+              ? "The finalists have been selected and you can help decide who the winner is. To vote, register with a phone number or gmail address, only one registration is allowed per person. The public vote will have a weight of 20% and the vote closes on April 25. "
+              : "Los finalistas han sido seleccionados y tú puedes ayudar a decidir quien es el ganador. Para votar, registrate con número de teléfono o cuenta de gmail, solo se permite un registro por persona. La votación del público tendrá una incidencia del 20% sobre el total y la votación cierra el 25 de abril. "}
           </p>
 
           {/* <p>
