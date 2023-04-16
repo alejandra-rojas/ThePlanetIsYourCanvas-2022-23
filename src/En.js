@@ -19,8 +19,8 @@ function En() {
       <Resources />
       <Participate />
       <VoteIntro />
-      {/* <VoteWidget /> */}
-      {/* <VoteOut /> */}
+      <VoteWidget />
+      <VoteOut />
       <Footer />
     </>
   );
