@@ -25,7 +25,7 @@ export default function NavBar() {
   return (
     <>
       <div className="sign-in">
-        {/* {!user && (
+        {!user && (
           <>
             <img
               className="deco"
@@ -50,16 +50,16 @@ export default function NavBar() {
               </div>
             </div>
           </>
-        )} */}
+        )}
 
         {!user && (
           <>
-            <img
+            {/* <img
               className="deco"
               alt="wind-left"
               width="100px"
               src="media/SVG/aire-der-desk.svg"
-            />
+            /> */}
             <div className="phone-btn" onClick={handleClick}>
               <div className="google-icon-wrapper">
                 <img
