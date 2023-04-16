@@ -1,4 +1,4 @@
-import { collection, onSnapshot, query } from "firebase/firestore";
+import { collection, onSnapshot, query, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { auth, db } from "../firebase/config";
 import "./components.css";
@@ -19,11 +19,25 @@ export default function DrawingFinalists() {
     }
   };
 
-  useEffect(() => {
+  /* useEffect(() => {
     const drawingRef = collection(db, "dibujo");
     const q = query(drawingRef);
     onSnapshot(q, (snapshot) => {
       const drawings = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setDrawings(drawings);
+      console.log(drawings);
+    });
+  }, []);
+ */
+
+  useEffect(() => {
+    const drawingRef = collection(db, "dibujo");
+    const q = query(drawingRef);
+    getDocs(q).then((querySnapshot) => {
+      const drawings = querySnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
       }));

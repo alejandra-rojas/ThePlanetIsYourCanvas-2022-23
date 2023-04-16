@@ -1,4 +1,4 @@
-import { collection, onSnapshot, query } from "firebase/firestore";
+import { collection, onSnapshot, query, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { auth, db } from "../firebase/config";
 import "./components.css";
@@ -19,11 +19,24 @@ export default function IlustracionFinalists() {
     }
   };
 
+  // useEffect(() => {
+  //   const ilustracionRef = collection(db, "ilustracion");
+  //   const q = query(ilustracionRef);
+  //   onSnapshot(q, (snapshot) => {
+  //     const ilustraciones = snapshot.docs.map((doc) => ({
+  //       id: doc.id,
+  //       ...doc.data(),
+  //     }));
+  //     setIlustraciones(ilustraciones);
+  //     console.log(ilustraciones);
+  //   });
+  // }, []);
+
   useEffect(() => {
     const ilustracionRef = collection(db, "ilustracion");
     const q = query(ilustracionRef);
-    onSnapshot(q, (snapshot) => {
-      const ilustraciones = snapshot.docs.map((doc) => ({
+    getDocs(q).then((querySnapshot) => {
+      const ilustraciones = querySnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
       }));
