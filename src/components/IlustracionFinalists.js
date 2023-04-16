@@ -72,7 +72,6 @@ export default function IlustracionFinalists() {
 
               <div className="art-data">
                 <div className="art-details">
-                  {/* <div className="finalist-author">{author}</div> */}
                   <div className="finalist-title">{title}</div>
                 </div>
                 <div className="tooltip">
@@ -108,5 +107,3 @@ export default function IlustracionFinalists() {
     </>
   );
 }
-
-// <img className="image-entries" src={imageURL} alt="title"></img>

@@ -4,7 +4,6 @@ import { auth, db } from "../firebase/config";
 import "./components.css";
 import { useAuthContext } from "./hooks/useAuthContext";
 import "react-responsive-modal/styles.css";
-import { Modal } from "react-responsive-modal";
 import VoteEntryDraw from "./VoteEntryDraw";
 import ModalImage from "react-modal-image";
 
@@ -12,15 +11,6 @@ export default function DrawingFinalists() {
   const href = window.location.pathname;
   const [drawings, setDrawings] = useState([]);
   const { user } = useAuthContext(auth);
-
-  const [open, setOpen] = useState(false);
-  const onOpenModal = () => setOpen(true);
-  const onCloseModal = () => setOpen(false);
-  const bg = {
-    overlay: {
-      // background: "rgba(36, 123, 160, 0.3)",
-    },
-  };
 
   const handleClickScroll = () => {
     const voteRegisterSection = document.getElementById("vote");
@@ -66,7 +56,6 @@ export default function DrawingFinalists() {
       </div>
 
       <div className="entries">
-        {/* <div className="logo-categoria"></div> */}
         {drawings.length === 0 ? (
           <p>Finalits are loading.</p>
         ) : (
@@ -83,7 +72,6 @@ export default function DrawingFinalists() {
 
               <div className="art-data">
                 <div className="art-details">
-                  {/* <div className="finalist-author">{author}</div> */}
                   <div className="finalist-title">{title}</div>
                 </div>
                 <div className="tooltip">
@@ -118,5 +106,3 @@ export default function DrawingFinalists() {
     </>
   );
 }
-
-// <img className="image-entries" src={imageURL} alt="title"></img>
