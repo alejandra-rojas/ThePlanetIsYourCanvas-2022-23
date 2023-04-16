@@ -1,10 +1,14 @@
 import React from "react";
-//import { useAuthState } from "react-firebase-hooks/auth";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { useAuthContext } from "./hooks/useAuthContext";
 import { auth, db } from "../firebase/config";
 import { arrayRemove, arrayUnion, doc, updateDoc } from "firebase/firestore";
 
 export default function VoteEntry({ id, votes }) {
+  const href = window.location.pathname;
   const { user } = useAuthContext(auth);
 
   const votesRef = doc(db, "ilustracion", id);
@@ -16,6 +20,12 @@ export default function VoteEntry({ id, votes }) {
       })
         .then(() => {
           console.log("unvoted");
+          // Show toast message after removing vote
+          toast.error(
+            href === "/"
+              ? "Vote removed. Refresh to see the changes"
+              : "Voto eliminado. Actualiza para ver los cambios"
+          );
         })
         .catch((e) => {
           console.log(e);
@@ -26,6 +36,12 @@ export default function VoteEntry({ id, votes }) {
       })
         .then(() => {
           console.log("voted");
+          // Show toast message after successful vote
+          toast.success(
+            href === "/"
+              ? "👍 Vote submitted. Refresh to see the changes"
+              : "👍 Voto exitoso. Actualiza para ver los cambios"
+          );
         })
         .catch((e) => {
           console.log(e);
