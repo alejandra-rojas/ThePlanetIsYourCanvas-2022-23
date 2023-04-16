@@ -45,6 +45,7 @@ export default function PhotoFinalists() {
           src="media/votacion/fotoLogo.svg"
           alt="logo-camera"
         ></img>
+
         {href === "/" ? (
           <img
             className="categoria-nombre"
@@ -62,7 +63,13 @@ export default function PhotoFinalists() {
 
       <div className="entries">
         {photos.length === 0 ? (
-          <p>Finalits are loading.</p>
+          <>
+            <p>
+              {href === "/"
+                ? "Register to access the vote"
+                : "Registrate para votar"}
+            </p>
+          </>
         ) : (
           photos.map(({ id, title, author, imageURL, votes }) => (
             <div key={id} className="entry-details">
