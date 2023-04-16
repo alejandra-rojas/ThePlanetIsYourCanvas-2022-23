@@ -19,8 +19,8 @@ function Es() {
       <Resources />
       <Participate />
       <VoteIntro />
-      <VoteWidget />
-      <VoteOut />
+      {/* <VoteWidget /> */}
+      {/* <VoteOut /> */}
       <Footer />
     </>
   );

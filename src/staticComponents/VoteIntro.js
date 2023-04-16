@@ -25,8 +25,8 @@ function VoteIntro() {
 
           <p>
             {href === "/"
-              ? "The finalists have been selected and you can help decide who the winner is. To vote, register with a google account or a phone number, only one registration is allowed per person. The public vote will have a weight of 20%. The public vote closes on April 25."
-              : "Los finalistas han sido seleccionados y tú puedes ayudar a decidir quien es el ganador. Para votar, registrate con una cuenta de google o un número de teléfono, solo se permite un registro por persona. La votación del público tendrá una incidencia del 20% sobre el total. La votación del público cierra el 25 de abril. "}
+              ? "Our voting widget is currently under maintenance, come back later to submit your vote. Dont worry, votes already submitted are safe!"
+              : "Nuestro sistema de votación se encuentra actualmente en mantenimiento, regrese más tarde para enviar su voto. ¡No se preocupe, los votos ya enviados están seguros!"}
           </p>
         </section>
       </div>
