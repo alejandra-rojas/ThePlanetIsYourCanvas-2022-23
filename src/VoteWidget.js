@@ -9,9 +9,10 @@ function VoteWidget() {
 
   return (
     <div className="padding-main-container vote-widget">
+      <Navbar />
+
       {authIsReady && (
         <>
-          <Navbar />
           <IlustracionFinalists />
           <DrawingFinalists />
           <PhotoFinalists />
