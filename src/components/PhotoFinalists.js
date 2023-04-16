@@ -1,4 +1,4 @@
-import { collection, onSnapshot, query } from "firebase/firestore";
+import { collection, onSnapshot, query, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { auth, db } from "../firebase/config";
 import "./components.css";
@@ -20,7 +20,7 @@ export default function PhotoFinalists() {
     }
   };
 
-  useEffect(() => {
+  /*   useEffect(() => {
     const photoRef = collection(db, "foto");
     const q = query(photoRef);
     onSnapshot(q, (snapshot) => {
@@ -31,6 +31,23 @@ export default function PhotoFinalists() {
       setPhotos(photos);
       console.log(photos);
     });
+  }, []); */
+
+  useEffect(() => {
+    const photoRef = collection(db, "foto");
+    const q = query(photoRef);
+    getDocs(q)
+      .then((snapshot) => {
+        const photos = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setPhotos(photos);
+        console.log(photos);
+      })
+      .catch((error) => {
+        console.log("Error getting photos: ", error);
+      });
   }, []);
 
   return (
