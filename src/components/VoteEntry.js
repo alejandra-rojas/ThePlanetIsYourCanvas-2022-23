@@ -40,7 +40,7 @@ export default function VoteEntry({ id, votes }) {
           toast.success(
             href === "/"
               ? "👍 Vote submitted. Refresh to see the changes"
-              : "👍 Voto exitoso. Actualiza para ver los cambios"
+              : "👍 Voto éxitoso. Actualiza para ver los cambios"
           );
         })
         .catch((e) => {
