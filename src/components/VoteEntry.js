@@ -32,6 +32,7 @@ export default function VoteEntry({ id, votes }) {
         });
     }
   };
+
   return (
     <div className="counter">
       <i

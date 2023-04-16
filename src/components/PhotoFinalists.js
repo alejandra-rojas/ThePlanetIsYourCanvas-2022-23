@@ -20,19 +20,6 @@ export default function PhotoFinalists() {
     }
   };
 
-  /*   useEffect(() => {
-    const photoRef = collection(db, "foto");
-    const q = query(photoRef);
-    onSnapshot(q, (snapshot) => {
-      const photos = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setPhotos(photos);
-      console.log(photos);
-    });
-  }, []); */
-
   useEffect(() => {
     const photoRef = collection(db, "foto");
     const q = query(photoRef);
