@@ -22,10 +22,10 @@ function Es() {
       <Resources />
       <Participate />
       <VoteIntro />
-      {/* <VoteWidget /> */}
+      <VoteWidget />
 
-      <Maintenance />
-      <Allnocount />
+      {/* <Maintenance />
+      <Allnocount /> */}
 
       <VoteOut />
       <Footer />
