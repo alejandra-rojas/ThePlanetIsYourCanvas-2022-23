@@ -71,7 +71,338 @@ export default function DrawingFinalists() {
 
       <div className="entries">
         {drawings.length === 0 ? (
-          <p>Finalits are loading.</p>
+          <>
+            <p>{href === "/" ? "Register to vote" : "Registrate para votar"}</p>
+            <div className="entries">
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/di1.jpg"
+                    large="media/votacion-finalists/di1.jpg"
+                    alt="¿Somos la raza más inteligente o somos plaga?"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">
+                        ¿Somos la raza más inteligente o somos plaga?
+                      </div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">78</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/di2.jpg"
+                    large="media/votacion-finalists/di2.jpg"
+                    alt="Agujero Planetario"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">Agujero Planetario</div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">4</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/di3.jpg"
+                    large="media/votacion-finalists/di3.jpg"
+                    alt="Respiro Profundo"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">Respiro Profundo</div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">14</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/di4.jpg"
+                    large="media/votacion-finalists/di4.jpg"
+                    alt="Cada acción cuenta. En un cuadro también."
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">
+                        Cada acción cuenta. En un cuadro también.
+                      </div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">28</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/di5.jpg"
+                    large="media/votacion-finalists/di5.jpg"
+                    alt="Mar de plástico"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">Mar de plástico</div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">11</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/di6.jpg"
+                    large="media/votacion-finalists/di6.jpg"
+                    alt="There are no gender boundaries in ozone layer protection"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">
+                        There are no gender boundaries in ozone layer protection
+                      </div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">43</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/di7.jpg"
+                    large="media/votacion-finalists/di7.jpg"
+                    alt="El agujero"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">El Agujero</div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">1</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/di8.jpg"
+                    large="media/votacion-finalists/di8.jpg"
+                    alt="Legado de la Revolución Industrial"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">
+                        Legado de la Revolución Industrial
+                      </div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">73</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
         ) : (
           drawings.map(({ id, title, author, imageURL, votes }) => (
             <div key={id} className="entry-details">

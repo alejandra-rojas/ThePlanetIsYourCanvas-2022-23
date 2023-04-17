@@ -64,11 +64,170 @@ export default function PhotoFinalists() {
       <div className="entries">
         {photos.length === 0 ? (
           <>
-            <p>
-              {href === "/"
-                ? "Register to access the vote"
-                : "Registrate para votar"}
-            </p>
+            <p>{href === "/" ? "Register to vote" : "Registrate para votar"}</p>
+            <div className="entries">
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/photo1.jpeg"
+                    large="media/votacion-finalists/photo1.jpeg"
+                    alt="El mundo se quema"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">El mundo se quema</div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">12</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/photo2.jpeg"
+                    large="media/votacion-finalists/photo2.jpeg"
+                    alt="Lar"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">Lar</div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">6</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/photo3.jpg"
+                    large="media/votacion-finalists/photo3.jpg"
+                    alt="Conexión terrestre"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">Conexión terrestre</div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">6</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="entry-details">
+                <div>
+                  <ModalImage
+                    className="image-entries"
+                    small="media/votacion-finalists/photo4.jpg"
+                    large="media/votacion-finalists/photo4.jpg"
+                    alt="Su muerte, nuestra muerte"
+                    hideDownload="true"
+                    hideZoom="true"
+                  />
+                  <div className="art-data">
+                    <div className="art-details">
+                      <div className="finalist-title">
+                        Su muerte, nuestra muerte
+                      </div>
+                    </div>
+                    <div className="tooltip">
+                      <div className="pe-2 counter">
+                        <i
+                          className={`fa fa-solid fa-thumbs-up`}
+                          style={{
+                            display: "inline",
+                            cursor: "pointer",
+                            color: null,
+                            fontSize: "1.5rem",
+                          }}
+                        />
+                        <div onClick={handleClickScroll}>
+                          {/* <div className="votes-number">39</div> */}
+
+                          <span className="tooltiptext">
+                            {href === "/"
+                              ? "Register to vote"
+                              : "Registrate para votar"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </>
         ) : (
           photos.map(({ id, title, author, imageURL, votes }) => (
