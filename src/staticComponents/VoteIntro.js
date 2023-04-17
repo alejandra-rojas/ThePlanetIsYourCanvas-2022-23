@@ -24,9 +24,42 @@ function VoteIntro() {
           </div>
 
           <p>
-            {href === "/"
-              ? "The finalists have been selected and you can help decide who the winner is. To vote, register with a phone number or gmail address, only one registration is allowed per person. The public vote will have a weight of 20% and the vote closes on April 25. "
-              : "Los finalistas han sido seleccionados y tú puedes ayudar a decidir quien es el ganador. Para votar, registrate con número de teléfono o cuenta de gmail, solo se permite un registro por persona. La votación del público tendrá una incidencia del 20% sobre el total y la votación cierra el 25 de abril. "}
+            {href === "/" ? (
+              <>
+                The finalists have been pre-selected and you can help us decide
+                who the winners will be. To vote, please register with your
+                phone number or Gmail account, only one registration per person
+                is allowed. The public vote will count for 20% of the total.
+                Voting will close on 25 April. How do I know if my vote has been
+                cast correctly? When refreshing the page the “hand” will have
+                changed colour.
+                <span>
+                  &nbsp;
+                  <i
+                    className="fa fa-thumbs-up"
+                    style={{ fontSize: "24px" }}
+                  ></i>
+                </span>
+              </>
+            ) : (
+              <>
+                Las personas finalistas han sido pre-seleccionadas y tú puedes
+                ayudarnos a decidir quiénes serán las personas ganadoras. Para
+                votar, regístrate con tu número de teléfono o cuenta de Gmail,
+                solo se permite un registro por persona. La votación del público
+                tendrá una incidencia del 20% sobre el total. La votación
+                cerrará el 25 de abril. ¿Cómo saber si tu voto ha sido emitido
+                correctamente? Al refrescar la página la 'mano' habrá cambiado
+                de color.
+                <span>
+                  &nbsp;
+                  <i
+                    className="fa fa-thumbs-up"
+                    style={{ fontSize: "24px" }}
+                  ></i>
+                </span>
+              </>
+            )}
           </p>
 
           {/* <p>
