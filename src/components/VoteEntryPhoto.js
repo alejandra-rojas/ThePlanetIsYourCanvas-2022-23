@@ -18,7 +18,7 @@ export default function VoteEntryPhoto({ id, votes }) {
         votes: arrayRemove(user.uid),
       })
         .then(() => {
-          console.log("unvoted");
+          console.log("Vote has been removed.");
           // Show toast message after removing vote
           toast.error(
             href === "/"
@@ -34,7 +34,7 @@ export default function VoteEntryPhoto({ id, votes }) {
         votes: arrayUnion(user.uid),
       })
         .then(() => {
-          console.log("voted");
+          console.log("Vote has been recorded.");
           // Show toast message after successful vote
           toast.success(
             href === "/"
@@ -65,7 +65,6 @@ export default function VoteEntryPhoto({ id, votes }) {
           }}
           onClick={handleLike}
         />
-        <div className="votes-number">{votes?.length}</div>
       </div>
       <ToastContainer position="top-right" />
     </>

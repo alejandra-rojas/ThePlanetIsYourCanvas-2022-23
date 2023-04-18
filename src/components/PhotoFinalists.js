@@ -11,7 +11,7 @@ export default function PhotoFinalists() {
   const [photos, setPhotos] = useState([]);
   const { user } = useAuthContext(auth);
   const href = window.location.pathname;
-  console.log(href);
+  // console.log(href);
 
   const handleClickScroll = () => {
     const voteRegisterSection = document.getElementById("vote");
@@ -30,7 +30,7 @@ export default function PhotoFinalists() {
           ...doc.data(),
         }));
         setPhotos(photos);
-        console.log(photos);
+        // console.log(photos);
       })
       .catch((error) => {
         console.log("Error getting photos: ", error);
@@ -259,7 +259,7 @@ export default function PhotoFinalists() {
                         }}
                       />
                       <div onClick={handleClickScroll}>
-                        <div className="votes-number">{votes?.length}</div>
+                        {/* <div className="votes-number">{votes?.length}</div> */}
 
                         <span className="tooltiptext">
                           {href === "/"
