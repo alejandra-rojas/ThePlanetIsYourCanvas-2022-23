@@ -62,7 +62,6 @@ export default function VoteEntryDraw({ id, votes }) {
         }}
         onClick={handleLike}
       />
-      <div className="votes-number">{votes?.length}</div>
     </div>
   );
 }

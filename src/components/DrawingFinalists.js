@@ -28,7 +28,6 @@ export default function DrawingFinalists() {
         ...doc.data(),
       }));
       setDrawings(drawings);
-      console.log(drawings);
     });
   }, []);
  */
@@ -42,7 +41,6 @@ export default function DrawingFinalists() {
         ...doc.data(),
       }));
       setDrawings(drawings);
-      console.log(drawings);
     });
   }, []);
 
@@ -104,7 +102,7 @@ export default function DrawingFinalists() {
                         }}
                       />
                       <div onClick={handleClickScroll}>
-                        <div className="votes-number">{votes?.length}</div>
+                        {/* <div className="votes-number">{votes?.length}</div> */}
                         <span className="tooltiptext">
                           {href === "/"
                             ? "Register to vote"
