@@ -63,7 +63,6 @@ export default function VoteEntry({ id, votes }) {
         }}
         onClick={handleLike}
       />
-      <div className="votes-number">{votes?.length}</div>
     </div>
   );
 }

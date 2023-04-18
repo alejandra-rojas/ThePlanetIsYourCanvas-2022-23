@@ -28,7 +28,7 @@ export default function IlustracionFinalists() {
   //       ...doc.data(),
   //     }));
   //     setIlustraciones(ilustraciones);
-  //     console.log(ilustraciones);
+  //
   //   });
   // }, []);
 
@@ -41,7 +41,6 @@ export default function IlustracionFinalists() {
         ...doc.data(),
       }));
       setIlustraciones(ilustraciones);
-      console.log(ilustraciones);
     });
   }, []);
 
@@ -101,8 +100,6 @@ export default function IlustracionFinalists() {
                         }}
                       />
                       <div onClick={handleClickScroll}>
-                        <div className="votes-number">{votes?.length}</div>
-
                         <span className="tooltiptext">
                           {href === "/"
                             ? "Register to vote"
