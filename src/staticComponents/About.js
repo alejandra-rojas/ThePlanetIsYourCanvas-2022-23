@@ -75,11 +75,11 @@ function About() {
                 src="media/SVG/categoriesName.svg"
                 alt="categories of the contest: illustration, painting, photo, video"
               />
-              <img
+              {/* <img
                 className="iconos-participate"
                 src="media/voteBanner/enGreen.svg"
                 alt="Public vote is now open."
-              />
+              /> */}
             </>
           ) : (
             <>
@@ -96,11 +96,11 @@ function About() {
                 alt="icons of categories: illustration, painting, photo, video"
               />
 
-              <img
+              {/* <img
                 class="iconos-participate"
                 src="media/voteBanner/esGreen.svg"
                 alt="El voto del publico esta abierto."
-              />
+              /> */}
             </>
           )}
         </div>
