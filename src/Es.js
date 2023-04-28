@@ -11,6 +11,7 @@ import VoteOut from "./staticComponents/VoteOut";
 import AllStatic from "./staticComponents/AllStatic";
 import Maintenance from "./staticComponents/Maintenance";
 import Allnocount from "./staticComponents/Allnocount";
+import Winners from "./staticComponents/Winners";
 
 function Es() {
   return (
@@ -22,12 +23,11 @@ function Es() {
       <Resources />
       <Participate />
       <VoteIntro />
-      <VoteWidget />
-
+      <Winners />
+      {/* <VoteWidget /> */}
       {/* <Maintenance />
       <Allnocount /> */}
-
-      <VoteOut />
+      {/* <VoteOut /> */}
       <Footer />
     </>
   );

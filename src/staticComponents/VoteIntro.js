@@ -26,38 +26,38 @@ function VoteIntro() {
           <p>
             {href === "/" ? (
               <>
-                The finalists have been pre-selected and you can help us decide
+                {/* The finalists have been pre-selected and you can help us decide
                 who the winners will be. To vote, please register with your
                 phone number or Gmail account, only one registration per person
                 is allowed. The public vote will count for 20% of the total.
                 Voting will close on 25 April. How do I know if my vote has been
                 cast correctly? When refreshing the page the “hand” will have
-                changed colour.
-                <span>
+                changed colour. */}
+                We thank all the participants for contributing to the promotion
+                of environmental care through art and congratulate the winners
+                for their talent and commitment to protecting the planet.
+                {/* <span>
                   &nbsp;
                   <i
                     className="fa fa-thumbs-up"
                     style={{ fontSize: "24px" }}
                   ></i>
-                </span>
+                </span> */}
               </>
             ) : (
               <>
-                Las personas finalistas han sido pre-seleccionadas y tú puedes
+                {/* Las personas finalistas han sido pre-seleccionadas y tú puedes
                 ayudarnos a decidir quiénes serán las personas ganadoras. Para
                 votar, regístrate con tu número de teléfono o cuenta de Gmail,
                 solo se permite un registro por persona. La votación del público
                 tendrá una incidencia del 20% sobre el total. La votación
                 cerrará el 25 de abril. ¿Cómo saber si tu voto ha sido emitido
                 correctamente? Al refrescar la página la 'mano' habrá cambiado
-                de color.
-                <span>
-                  &nbsp;
-                  <i
-                    className="fa fa-thumbs-up"
-                    style={{ fontSize: "24px" }}
-                  ></i>
-                </span>
+                de color. */}
+                Agradecemos a todos los y las participantes por contribuir a la
+                promoción del cuidado del medio ambiente a través del arte y
+                felicitamos a los ganadores por su talento y compromiso con la
+                protección del planeta.
               </>
             )}
           </p>

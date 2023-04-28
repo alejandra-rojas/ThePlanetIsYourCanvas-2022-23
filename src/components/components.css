@@ -85,7 +85,11 @@ u {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 50px 0 30px;
+  padding: 0 0 30px;
+}
+
+.padding-container {
+  margin-top: 70px;
 }
 
 .categoria-logo {
@@ -123,9 +127,9 @@ u {
 }
 
 .art-data {
-  width: 320px;
+  text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -194,6 +198,52 @@ u {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+/* styles winners section */
+.category-winner {
+  padding-bottom: 50px;
+}
+
+.winner-entry {
+  width: auto;
+  height: 400px;
+  cursor: pointer;
+  border: white solid 9px;
+  flex-grow: 3;
+}
+
+.firstplace-tag {
+  height: 60px;
+  padding-top: 5px;
+}
+
+.winner-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* letter-spacing: -0.5px; */
+}
+
+.winner-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  /* letter-spacing: -0.5px; */
+}
+
+.winner-country {
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* letter-spacing: -0.5px; */
+}
+
+.finalist-tag {
+  height: 40px;
+  padding-top: 10px;
+}
+
+video {
+  width: 350px;
+  border: white solid 9px;
 }
 
 .wobble-ver-left {
@@ -277,7 +327,7 @@ u {
     column-gap: 20px;
     row-gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .sign-in {
@@ -307,12 +357,16 @@ u {
     border-bottom: #0958a3 dotted 3px;
   }
 
+  .padding-container {
+    margin-top: 50px;
+  }
+
   .categoria-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 50px 0 25px;
+    padding: 25px 0 25px;
   }
 
   .categoria-logo {
@@ -367,6 +421,53 @@ u {
 
   .formContainer {
     width: 40%;
+  }
+
+  /* Winners section */
+  .category-winner {
+    padding-bottom: 30px;
+  }
+
+  .winner-entry {
+    width: auto;
+    height: 400px;
+    cursor: pointer;
+    border: white solid 9px;
+    flex-grow: 3;
+  }
+
+  .firstplace-tag {
+    height: 60px;
+    padding-top: 5px;
+  }
+
+  .winner-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* letter-spacing: -0.5px; */
+  }
+
+  .winner-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* letter-spacing: -0.5px; */
+  }
+
+  .winner-country {
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* letter-spacing: -0.5px; */
+  }
+
+  .finalist-tag {
+    height: 40px;
+    padding-top: 10px;
+  }
+
+  video {
+    height: 400px;
+    width: auto;
+    border: white solid 9px;
   }
 }
 

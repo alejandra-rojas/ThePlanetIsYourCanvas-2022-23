@@ -10,6 +10,7 @@ import Footer from "./staticComponents/Footer";
 import VoteOut from "./staticComponents/VoteOut";
 import Maintenance from "./staticComponents/Maintenance";
 import Allnocount from "./staticComponents/Allnocount";
+import Winners from "./staticComponents/Winners";
 
 function En() {
   return (
@@ -21,12 +22,11 @@ function En() {
       <Resources />
       <Participate />
       <VoteIntro />
-      <VoteWidget />
-
+      <Winners />
+      {/* <VoteWidget /> */}
       {/* <Maintenance />
       <Allnocount /> */}
-
-      <VoteOut />
+      {/* <VoteOut /> */}
       <Footer />
     </>
   );
