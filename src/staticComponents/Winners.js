@@ -8,6 +8,24 @@ function Winners() {
   return (
     <>
       <div className="padding-main-container vote-widget">
+        <div className="dottedline"></div>
+        <p className="thank-you">
+          {href === "/" ? (
+            <>
+              We thank all the participants for contributing to the promotion of
+              environmental care through art and congratulate the winners for
+              their talent and commitment to protecting the planet.
+            </>
+          ) : (
+            <>
+              Agradecemos a todos los y las participantes por contribuir a la
+              promoción del cuidado del medio ambiente a través del arte y
+              felicitamos a los ganadores por su talento y compromiso con la
+              protección del planeta.
+            </>
+          )}
+        </p>
+
         <div className="categoria-container">
           <img
             className="categoria-logo "
