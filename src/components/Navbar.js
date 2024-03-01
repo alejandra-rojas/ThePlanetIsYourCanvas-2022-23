@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useLoginGoogle } from "./hooks/useLoginGoogle";
 import { useLogout } from "./hooks/useLogout";
 import { useAuthContext } from "./hooks/useAuthContext";
-import Signup from "./Signup";
-
+// import Signup from "./Signup";
 import PhoneSign from "./PhoneSign";
 
 export default function NavBar() {

@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { auth } from "../firebase/config";
-import {
-  getAuth,
-  RecaptchaVerifier,
-  signInWithPhoneNumber,
-} from "firebase/auth";
+import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { useAuthContext } from "./hooks/useAuthContext";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";

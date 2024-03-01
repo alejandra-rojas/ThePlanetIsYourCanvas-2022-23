@@ -5,6 +5,7 @@ function Header() {
   const href = window.location.pathname;
 
   // Active menu class on section scroll
+  // eslint-disable-next-line no-unused-vars
   const [activeSection, setActiveSection] = useState("");
 
   const handleScroll = () => {

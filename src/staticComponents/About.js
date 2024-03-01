@@ -73,7 +73,7 @@ function About() {
               <img
                 className="iconos-participate"
                 src="media/SVG/categoriesName.svg"
-                alt="categories of the contest: illustration, painting, photo, video"
+                alt="categories of the contest"
               />
               {/* <img
                 className="iconos-participate"
@@ -93,7 +93,7 @@ function About() {
               <img
                 class="iconos-participate"
                 src="media/SVG/categoriesNameES.svg"
-                alt="icons of categories: illustration, painting, photo, video"
+                alt="icons of categories"
               />
 
               {/* <img

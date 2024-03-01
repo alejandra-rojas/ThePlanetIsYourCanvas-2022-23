@@ -19,6 +19,7 @@ function Participate() {
                   width="100px"
                   height="auto"
                   className="deco"
+                  alt="decoration"
                 />
                 <div className="boxed-title">
                   <img

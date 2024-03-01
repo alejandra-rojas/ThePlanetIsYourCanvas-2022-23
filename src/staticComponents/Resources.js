@@ -49,7 +49,10 @@ function Resources() {
                   target="_blank"
                   class="poster"
                 >
-                  <img src="media/resources/Esp/PNG/icono-9-criteriaES.jpg" />
+                  <img
+                    src="media/resources/Esp/PNG/icono-9-criteriaES.jpg"
+                    alt="poster"
+                  />
                 </a>
               )}
 
@@ -70,7 +73,10 @@ function Resources() {
                   target="_blank"
                   class="poster"
                 >
-                  <img src="media/resources/Esp/PNG/icono-8-esp.png" />
+                  <img
+                    src="media/resources/Esp/PNG/icono-8-esp.png"
+                    alt="poster"
+                  />
                 </a>
               )}
 
@@ -91,7 +97,10 @@ function Resources() {
                   target="_blank"
                   class="poster"
                 >
-                  <img src="media/resources/Esp/PNG/Icono-6-esp.jpg" />
+                  <img
+                    src="media/resources/Esp/PNG/Icono-6-esp.jpg"
+                    alt="poster"
+                  />
                 </a>
               )}
 
@@ -112,7 +121,10 @@ function Resources() {
                   target="_blank"
                   class="poster"
                 >
-                  <img src="media/resources/Esp/PNG/Icono-5-esp.jpg" />
+                  <img
+                    src="media/resources/Esp/PNG/Icono-5-esp.jpg"
+                    alt="poster"
+                  />
                 </a>
               )}
 
@@ -158,7 +170,10 @@ function Resources() {
                   rel="noreferrer"
                   class="poster"
                 >
-                  <img src="media/resources/Esp/PNG/Icono-2-esp.jpg" />
+                  <img
+                    src="media/resources/Esp/PNG/Icono-2-esp.jpg"
+                    alt="poster"
+                  />
                 </a>
               )}
 
@@ -181,7 +196,10 @@ function Resources() {
                   rel="noreferrer"
                   class="poster"
                 >
-                  <img src="media/resources/Esp/PNG/Icono-3-esp.jpg" />
+                  <img
+                    src="media/resources/Esp/PNG/Icono-3-esp.jpg"
+                    alt="poster"
+                  />
                 </a>
               )}
 
@@ -204,7 +222,10 @@ function Resources() {
                   rel="noreferrer"
                   class="poster"
                 >
-                  <img src="media/resources/Esp/PNG/Icono-4-esp.jpg" />
+                  <img
+                    src="media/resources/Esp/PNG/Icono-4-esp.jpg"
+                    alt="poster"
+                  />
                 </a>
               )}
 
@@ -214,7 +235,10 @@ function Resources() {
                 rel="noreferrer"
                 className="poster"
               >
-                <img src="media/resources/ProtectionTheOzoneLayer.png" />
+                <img
+                  src="media/resources/ProtectionTheOzoneLayer.png"
+                  alt="poster"
+                />
               </a>
               <iframe
                 width="560"
