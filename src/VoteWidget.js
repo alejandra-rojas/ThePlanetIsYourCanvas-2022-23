@@ -3,10 +3,11 @@ import Navbar from "./components/Navbar";
 import IlustracionFinalists from "./components/IlustracionFinalists";
 import DrawingFinalists from "./components/DrawingFinalists";
 import PhotoFinalists from "./components/PhotoFinalists";
-import Allnocount from "./staticComponents/Allnocount";
+// import Allnocount from "./staticComponents/Allnocount";
 
 function VoteWidget() {
-  const { user, authIsReady } = useAuthContext();
+  // const { user, authIsReady } = useAuthContext();
+  const { authIsReady } = useAuthContext();
 
   if (!authIsReady) {
     return <div>Loading...</div>;
@@ -15,7 +16,10 @@ function VoteWidget() {
   return (
     <div className="padding-main-container vote-widget">
       <Navbar />
-      {user ? (
+      <IlustracionFinalists />
+      {/* <DrawingFinalists /> */}
+      <PhotoFinalists />
+      {/* {user ? (
         <>
           <IlustracionFinalists />
           <DrawingFinalists />
@@ -23,7 +27,7 @@ function VoteWidget() {
         </>
       ) : (
         <Allnocount />
-      )}
+      )} */}
     </div>
   );
 }

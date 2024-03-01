@@ -19,20 +19,19 @@ export default function IlustracionFinalists() {
     }
   };
 
-  // useEffect(() => {
-  //   const ilustracionRef = collection(db, "ilustracion");
-  //   const q = query(ilustracionRef);
-  //   onSnapshot(q, (snapshot) => {
-  //     const ilustraciones = snapshot.docs.map((doc) => ({
-  //       id: doc.id,
-  //       ...doc.data(),
-  //     }));
-  //     setIlustraciones(ilustraciones);
-  //
-  //   });
-  // }, []);
-
   useEffect(() => {
+    const ilustracionRef = collection(db, "ilustracion");
+    const q = query(ilustracionRef);
+    onSnapshot(q, (snapshot) => {
+      const ilustraciones = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setIlustraciones(ilustraciones);
+    });
+  }, []);
+
+  /*   useEffect(() => {
     const ilustracionRef = collection(db, "ilustracion");
     const q = query(ilustracionRef);
     getDocs(q).then((querySnapshot) => {
@@ -42,7 +41,7 @@ export default function IlustracionFinalists() {
       }));
       setIlustraciones(ilustraciones);
     });
-  }, []);
+  }, []); */
 
   return (
     <>
@@ -100,6 +99,7 @@ export default function IlustracionFinalists() {
                         }}
                       />
                       <div onClick={handleClickScroll}>
+                        <div className="votes-number">{votes?.length}</div>
                         <span className="tooltiptext">
                           {href === "/"
                             ? "Register to vote"

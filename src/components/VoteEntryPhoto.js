@@ -1,6 +1,4 @@
-import React from "react";
-
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { useAuthContext } from "./hooks/useAuthContext";
@@ -8,7 +6,7 @@ import { auth, db } from "../firebase/config";
 import { arrayRemove, arrayUnion, doc, updateDoc } from "firebase/firestore";
 
 export default function VoteEntryPhoto({ id, votes }) {
-  const href = window.location.pathname;
+  // const href = window.location.pathname;
   const { user } = useAuthContext(auth);
   const votesRef = doc(db, "foto", id);
 
@@ -20,11 +18,11 @@ export default function VoteEntryPhoto({ id, votes }) {
         .then(() => {
           console.log("Vote has been removed.");
           // Show toast message after removing vote
-          toast.error(
-            href === "/"
-              ? "Vote removed. Refresh to see the changes"
-              : "Voto eliminado. Actualiza para ver los cambios"
-          );
+          // toast.error(
+          //   href === "/"
+          //     ? "Vote removed. Refresh to see the changes"
+          //     : "Voto eliminado. Actualiza para ver los cambios"
+          // );
         })
         .catch((e) => {
           console.log(e);
@@ -36,11 +34,11 @@ export default function VoteEntryPhoto({ id, votes }) {
         .then(() => {
           console.log("Vote has been recorded.");
           // Show toast message after successful vote
-          toast.success(
-            href === "/"
-              ? "👍 Vote submitted. Refresh to see the changes"
-              : "👍 Voto éxitoso. Actualiza para ver los cambios"
-          );
+          // toast.success(
+          //   href === "/"
+          //     ? "👍 Vote submitted. Refresh to see the changes"
+          //     : "👍 Voto éxitoso. Actualiza para ver los cambios"
+          // );
         })
 
         .catch((e) => {
@@ -65,8 +63,9 @@ export default function VoteEntryPhoto({ id, votes }) {
           }}
           onClick={handleLike}
         />
+        <div className="votes-number">{votes?.length}</div>
       </div>
-      <ToastContainer position="top-right" />
+      {/* <ToastContainer position="top-right" /> */}
     </>
   );
 }

@@ -38,7 +38,7 @@ export default function NavBar() {
                 <img
                   className="google-icon"
                   alt="google-icon"
-                  src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
                 />
               </div>
               <div className="btn-text">

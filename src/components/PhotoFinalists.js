@@ -1,4 +1,4 @@
-import { collection, onSnapshot, query, getDocs } from "firebase/firestore";
+import { collection, query, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { auth, db } from "../firebase/config";
 import "./components.css";
@@ -259,7 +259,7 @@ export default function PhotoFinalists() {
                         }}
                       />
                       <div onClick={handleClickScroll}>
-                        {/* <div className="votes-number">{votes?.length}</div> */}
+                        <div className="votes-number">{votes?.length}</div>
 
                         <span className="tooltiptext">
                           {href === "/"
