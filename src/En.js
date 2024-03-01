@@ -7,10 +7,10 @@ import Resources from "./staticComponents/Resources";
 import Participate from "./staticComponents/Participate";
 import VoteIntro from "./staticComponents/VoteIntro";
 import Footer from "./staticComponents/Footer";
-// import VoteOut from "./staticComponents/VoteOut";
+import VoteOut from "./staticComponents/VoteOut";
 // import Maintenance from "./staticComponents/Maintenance";
 // import Allnocount from "./staticComponents/Allnocount";
-// import Winners from "./staticComponents/Winners";
+import Winners from "./staticComponents/Winners";
 
 function En() {
   return (
@@ -22,11 +22,13 @@ function En() {
       <Resources />
       <Participate />
       <VoteIntro />
-      {/* <Winners /> */}
       <VoteWidget />
+      <VoteOut />
+      <Winners />
+
       {/* <Maintenance />
       <Allnocount /> */}
-      {/* <VoteOut /> */}
+
       <Footer />
     </>
   );

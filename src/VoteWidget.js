@@ -2,7 +2,7 @@ import { useAuthContext } from "./components/hooks/useAuthContext";
 import Navbar from "./components/Navbar";
 import IlustracionFinalists from "./components/IlustracionFinalists";
 // import DrawingFinalists from "./components/DrawingFinalists";
-import PhotoFinalists from "./components/PhotoFinalists";
+// import PhotoFinalists from "./components/PhotoFinalists";
 // import Allnocount from "./staticComponents/Allnocount";
 
 function VoteWidget() {
@@ -18,7 +18,7 @@ function VoteWidget() {
       <Navbar />
       <IlustracionFinalists />
       {/* <DrawingFinalists /> */}
-      <PhotoFinalists />
+      {/* <PhotoFinalists /> */}
       {/* {user ? (
         <>
           <IlustracionFinalists />
