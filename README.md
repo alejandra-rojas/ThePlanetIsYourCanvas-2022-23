@@ -30,4 +30,4 @@ https://github.com/alejandra-rojas/ThePlanetIsYourCanvas22-23-VoteWidget/assets/
 
 ## Firebase Database
 ![Associating user votes to each artwork in the database](https://github.com/alejandra-rojas/ThePlanetIsYourCanvas22-23-VoteWidget/assets/113424427/bdd600b3-8715-4ad5-bfaa-2dc2aa59bdfa)
-> Associating user votes to each artwork in the database.
+> Associating the public votes to each artwork in the database.
