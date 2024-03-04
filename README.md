@@ -1,6 +1,6 @@
 # The Planet is your Canvas 2022-2023. WebApp
 
-The second stage of the website for the contest, went live once the finalists of the contest were selected by the jury. The webapp was built with React and allowed users to vote for their favorite artworks, seamlessly integrating Firebase Database and Authentication to keep track of the votes. Over the span of the 10-day voting period, the webapp registered 2,410 individuals from over 15 countries in Latin America.
+The website went live once the finalists of the contest were selected by the jury. The webapp was built with React and allowed users to vote for their favorite finalist artworks, seamlessly integrating Firebase Database and Authentication to keep track of the votes. Over the span of the 10-day voting period, the webapp registered 2,410 individuals from over 15 countries in Latin America.
 
 ## Features and Functionality
 
