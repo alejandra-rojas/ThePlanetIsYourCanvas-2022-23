@@ -18,3 +18,12 @@ Upon each vote submission, the WebApp instantly updates the vote count for the r
 - **React:** Powering the dynamic and responsive user interface for this bilingual website.
 - **Firebase Database:** Storing and retrieving artwork details and votes, ensuring real-time updates.
 - **Firebase Authentication:** Registering users and assigning unique IDs for secure and controlled voting.
+
+
+## Voting widget in use
+https://github.com/alejandra-rojas/ThePlanetIsYourCanvas22-23-VoteWidget/assets/113424427/26fd1566-55ad-4df4-bfd1-c1bf4a19cc42
+[View video in YouTube](https://www.youtube.com/watch?v=EYCqVVLOMBU)
+
+
+## Firebase Database
+![Associating user votes to each artwork in the database](https://github.com/alejandra-rojas/ThePlanetIsYourCanvas22-23-VoteWidget/assets/113424427/bdd600b3-8715-4ad5-bfaa-2dc2aa59bdfa)
