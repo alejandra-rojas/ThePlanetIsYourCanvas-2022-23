@@ -21,9 +21,10 @@ Upon each vote submission, the WebApp instantly updates the vote count for the r
 
 
 ## Voting widget in use
-https://github.com/alejandra-rojas/ThePlanetIsYourCanvas22-23-VoteWidget/assets/113424427/26fd1566-55ad-4df4-bfd1-c1bf4a19cc42
+https://github.com/alejandra-rojas/ThePlanetIsYourCanvas22-23-VoteWidget/assets/113424427/0a51b681-74ab-471e-a68e-33bc0e0b6641
 [View video in YouTube](https://www.youtube.com/watch?v=EYCqVVLOMBU)
 
 
 ## Firebase Database
 ![Associating user votes to each artwork in the database](https://github.com/alejandra-rojas/ThePlanetIsYourCanvas22-23-VoteWidget/assets/113424427/bdd600b3-8715-4ad5-bfaa-2dc2aa59bdfa)
+> Associating user votes to each artwork in the database
