@@ -5,7 +5,7 @@ The webapp went live once the finalists of the contest were selected by the jury
 ## Tech Stack
 
 - **React:** Powering the dynamic and responsive user interface for this bilingual website.
-- **Firebase Database:** Storing and retrieving artwork details and votes, ensuring real-time updates.
+- **Firebase Database:** Storing and retrieving artwork details and votes, ensuring real-time updates and data synchronization between clients.
 - **Firebase Authentication:** Registering users and assigning unique IDs for secure and controlled voting.
 
 
