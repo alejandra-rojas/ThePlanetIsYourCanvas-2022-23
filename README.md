@@ -18,7 +18,7 @@ Essential details of the finalist artworks where stored in a Firebase Database; 
 To facilitate a fair and secure voting process, Firebase  Authentication is employed. Users interested in voting are required to register, receiving a unique ID upon completion. This ensures each user's eligibility to vote. The WebApp then utilizes this authentication system to prevent users from voting multiple times for the same artwork.
 
 ### Real-Time Vote Counting
-Upon each vote submission, the WebApp instantly updates the vote count for the respective artwork. Users witness the immediate impact of their participation, enhancing the overall interactive experience. A visually appealing CSS animation accompanies the voting process, with a thumbs-up icon moving up and changing color. This animation serves as visual feedback, confirming the successful submission of the user's vote.
+Upon each vote submission, an animation provides visual feedback to the user, confirming the successful submission of their vote and enhancing the interactive experience. The WebApp instantly updates the vote count for the respective artwork across clients.
 
 
 
