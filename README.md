@@ -1,5 +1,11 @@
 # The Planet is your Canvas 22-23 WebApp
 
+<h4 align="left">
+ <span>Deployed website:</span> <a href="https://leagues-dashboard.vercel.app](https://theplanetisyourcanvas22-23-votewidget.netlify.app/">The planet is your canvas 22-23</a> 
+</h4>
+
+<br />
+
 This web app was created for a contest organized by the UN Environment Program in Latin America. The objective was to promote the art contest and facilitate the submission of artworks by participants. After the first stage closed and the jury selected the finalists, the website allowed the public to vote for their favorite artworks.
 
 Built with React, the web app seamlessly integrated Firebase Database and Authentication to manage and track votes. Over the 10-day voting period, the web app registered 2410 users from more than 15 countries across Latin America.
